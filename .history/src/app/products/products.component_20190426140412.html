@@ -1,0 +1,256 @@
+<mat-card>
+        <mat-tab-group>
+          <mat-tab label="River Hydrology "> 
+            <br>
+            <div class="example-container">
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                      <mat-form-field appearance="outline">
+                          <mat-label>Catchment Area </mat-label>
+                        <input matInput placeholder="Catchment Area" type= "number">
+                        <mat-hint align="end" >Km sq</mat-hint>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-xs-6">
+                        <mat-form-field appearance="outline">
+                            <mat-label>River Width At Headworks Site</mat-label>
+                          <input matInput placeholder="River Width At Headworks Site"  type= "number">
+                          
+                          <mat-hint align="end" >m</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Longitudinal Slope Of River At Headworks site: 1:</mat-label>
+                          <input matInput placeholder="Longitudinal Slope Of River At Headworks site: 1"  type= "number">
+                          <mat-hint align="end" >(V:H)</mat-hint>
+                        </mat-form-field>                
+                      </div>
+                      <div class="col-xs-6">
+                          <mat-form-field appearance="outline">
+                              <mat-label>Average Annual Riverfall:</mat-label>
+                            <input matInput placeholder="Average Annual Riverfall"  type= "number">
+                            <mat-hint align="end" >mm</mat-hint>
+                          </mat-form-field>
+                        </div>                
+                      </div>
+                      <div class="row col-xs-12">
+                    
+                                   
+                        <div class="col-xs-4">
+                            <mat-form-field appearance="outline">
+                                <mat-label>25 Years</mat-label>
+                              <input matInput placeholder="25 Years"  type= "number">
+                              <mat-hint align="end" >cumec</mat-hint>
+                            </mat-form-field>                
+                          </div>
+                          <div class="col-xs-4">
+                              <mat-form-field appearance="outline">
+                                  <mat-label>50 Years:</mat-label>
+                                <input matInput placeholder="50 Years"  type= "number">
+                                <mat-hint align="end" >cumec</mat-hint>
+                              </mat-form-field>
+                            </div>         
+                            <div class="col-xs-4">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>100 Years</mat-label>
+                                  <input matInput placeholder="100 Years"  type= "number">
+                                  <mat-hint align="end" >cumec</mat-hint>
+                                </mat-form-field>                
+                              </div>
+                             </div>
+                             <div class=" row col-xs-12">
+                             <div class="col-xs-4">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>500 Years</mat-label>
+                                  <input matInput placeholder="500 Years"  type= "number">
+                                  <mat-hint align="end" >cumec</mat-hint>
+                                </mat-form-field>                
+                              </div>
+                              
+                              <div class="col-xs-4">
+                                  <mat-form-field appearance="outline">
+                                      <mat-label>1000 Years:</mat-label>
+                                    <input matInput placeholder="1000 Years"  type= "number">
+                                    <mat-hint align="end" >cumec</mat-hint>
+                                  </mat-form-field>
+                                </div>         
+            </div>
+                             <div class="row col-xs-12">
+                                <div class="col-xs-6">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Method of Flood Calculations:</mat-label>
+                                      <input matInput placeholder="Method of Flood Calculations"  type= "text">                             
+                                    </mat-form-field>                
+                                  </div>
+                             
+                                  <div class="col-xs-6">
+                                      <mat-form-field appearance="outline">
+                                          <mat-label>MIP(2016) Hydrology Region:</mat-label>
+                                          <mat-select >
+                                            <mat-option>None</mat-option>
+                                            <mat-option value="option1">Option 1</mat-option>
+                                            <mat-option value="option2">Option 2</mat-option>
+                                            <mat-option value="option3">Option 3</mat-option>
+                                          </mat-select>
+                                        </mat-form-field>
+                                    </div>    
+                                  </div>            
+                              
+                                  <div class="row col-xs-12">
+                                      <div class="col-xs-6">
+                                          <mat-form-field appearance="outline">
+                                              <mat-label>Name Of River Source:</mat-label>
+                                            <input matInput placeholder="Name Of River Source"  type= "text">                                   
+                                          </mat-form-field>                
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <mat-form-field appearance="outline">
+                                                <mat-label>River Basin:</mat-label>
+                                              <input matInput placeholder="River Basin"  type= "text">                                      
+                                            </mat-form-field>
+                                          </div>                
+                                        </div>                         
+                      </div>             
+        
+          </mat-tab>
+          
+        </mat-tab-group>
+        </mat-card>
+        
+       
+<br>
+<br>
+<br>
+
+<div class="jumbotron">
+    <fieldset>
+            <legend class="col-md-4 col-form-label">Enter Product Details:</legend>
+            <hr>
+            <br>
+            <div class="col-sm-12">
+<div class="form-group row">
+        <div class="col-sm-2">
+                <label for="inputPassword" class="col-sm-auto col-form-label">No:</label>
+        </div>
+        <div class="col-sm-2">
+            <input type="text" class="form-control">
+        </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-sm-2">
+            <label for="inputPassword" class="col-sm-auto col-form-label">Name:</label>
+    </div>
+    <div class="col-sm-2">
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        
+    </div>
+
+
+    <div class="col-sm-2">
+            <label for="inputPassword" class="col-sm-auto col-form-label">Description:</label>
+    </div>
+    <div class="col-sm-2">
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-sm-2">
+            <label for="inputPassword" class="col-sm-auto col-form-label">Status:</label>
+    </div>
+    <div class="col-sm-2">
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        
+    </div>
+
+
+    <div class="col-sm-2">
+            <label for="inputPassword" class="col-sm-auto col-form-label">Quantity:</label>
+    </div>
+    <div class="col-sm-2">
+        <input type="text" class="form-control">
+    </div>
+    <div class="col-sm-2">
+        
+    </div>
+</div>
+
+<div class="form-group row">
+        <div class="col-sm-2">
+                <label for="inputPassword" class="col-sm-auto col-form-label">Price:</label>
+        </div>
+        <div class="col-sm-2">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+
+    
+        <div class="col-sm-2">
+                <label for="inputPassword" class="col-sm-auto col-form-label">Category:</label>
+        </div>
+        <div class="col-sm-2">
+            <input type="text" class="form-control">
+        </div>
+        <div class="col-sm-2">
+            
+        </div>
+    </div>
+  
+    <br>
+    <div class="btn-toolbar">
+        <div>
+            <button class="btn btn-success" type="button">Add</button>
+            <button class="btn btn-danger" type="button">Cancel</button>
+        </div>
+    </div>
+            </div>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend class="col-md-4 col-form-label">Product List:</legend>
+        <hr>
+        <br>
+            <div class="card-body table-responsive">
+                <table class="table table-hover table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product No:</th>
+                            <th scope="col">Name:</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Category</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Milk</td>
+                            <td>Dudh ho DDC</td>
+                            <td>Available</td>
+                            <td>1500</td>
+                            <td>45 rs matrai</td>
+                            <td>Liquid</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </fieldset>
+    </div>
