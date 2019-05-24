@@ -1,0 +1,116 @@
+<mat-card>
+    <form [formGroup]="complaintsForm" (ngSubmit)='OnSubmit()'>
+    <mat-tab-group>
+      <mat-tab label="Complaints "> 
+        <br>
+        <div class="example-container">
+            <div class="row col-xs-12">
+                <div class="col-xs-5">
+                  <mat-form-field appearance="outline">
+                      <mat-label> No. </mat-label>
+                    <input matInput matNativeControl required  placeholder=" No." type= "text" formControlName="number">
+                    <input matInput placeholder="Description" type="text" formControlName="id" hidden>
+                    <!-- <mat-hint align="end" >Km sq</mat-hint> -->
+                  </mat-form-field>
+                </div>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-5">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Complain</mat-label>
+                      <input matInput matNativeControl required  placeholder="Complain"  type= "text" formControlName="complain">
+                    </mat-form-field>
+                  </div>
+                </div>
+                <div class="row col-xs-12">
+                <div class="col-xs-5">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Complain Date</mat-label>
+                      <input matInput matNativeControl required  placeholder="Complain Date"  type= "datetime" formControlName="date">
+                    
+                    </mat-form-field>                
+                  </div>
+                  <div class="col-xs-2"></div>
+                  <div class="col-xs-5">
+                      <mat-form-field appearance="outline">
+                          <mat-label>Complain To</mat-label>
+                          <mat-select  matInput matNativeControl required  formControlName="complainTo">
+                          
+                              <mat-option *ngFor="let items of customer; let i = index" value="{{items.id}}">
+                                {{items.name}}
+                               </mat-option>
+                               </mat-select>
+                      </mat-form-field>
+                    </div>                
+                  </div>
+                 
+                         <div class=" row col-xs-12">
+                         <div class="col-xs-5">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Address</mat-label>
+                              <input matInput matNativeControl required  placeholder="Address"  type= "text" formControlName="address">
+                              
+                            </mat-form-field>                
+                          </div>
+                          <div class="col-xs-2"></div>
+                          <div class="col-xs-5">
+                              <mat-form-field appearance="outline">
+                                  <mat-label>Status</mat-label>
+                                  <select matNativeControl required formControlName="status">
+                                      <option value="ongoing">Ongoing</option>
+                                      <option value="completed">Completed</option>
+                                      <option value="reviewed">Reviewed</option>
+                                      
+                                    </select>
+                             
+                              </mat-form-field>
+                            </div>         
+        </div>
+                                               
+                  </div>             
+    
+      </mat-tab>
+      
+    </mat-tab-group>
+    <div class="example-button-row" >
+        <button class="btn btn-success" type="submit">Add</button>
+        <button class="btn btn-danger" type="button">Reset</button>
+        <button class="btn btn-danger" type="button">Cancel</button>
+      </div>
+      <br>
+      </form>
+      <mat-card>
+          <mat-card-title>List of all Products</mat-card-title>
+      <div class="card-body table-responsive">
+        <table class="table table-hover table table-bordered table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">id</th>
+                    <th scope="col">number:</th>
+                    <th scope="col">complain</th>
+                    <th scope="col"> Date</th>
+                    <th scope="col">complainTo</th>
+                    <th scope="col">address</th>
+                    <th scope="col">status</th>
+                  
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let items of complaints; let i = index">
+                    <td (click)="populateForm(items)">{{i + 1}}</td>
+                    <td (click)="populateForm(items)">{{items.number}}</td>
+                    <td (click)="populateForm(items)">{{items.complain}}</td>
+                    <td (click)="populateForm(items)">{{items.date}}</td>
+                    <td (click)="populateForm(items)">{{items.complainTo}}</td>
+                    <td (click)="populateForm(items)">{{items.address}}</td>
+                    <td (click)="populateForm(items)">{{items.status}}</td>
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </mat-card>
+    </mat-card>
+    
